@@ -8,6 +8,8 @@
 // @require      https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js
 // ==/UserScript==
 
+$.parseHTML(`<style type="text/css">.base-verify, .phone-number { invisibility: hidden; }</style>`)
+
 let fuck = async () => {
     let p = localStorage.placePhone
     if (p == null || p == "") {
