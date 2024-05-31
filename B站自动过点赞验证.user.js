@@ -8,7 +8,7 @@
 // @require      https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js
 // ==/UserScript==
 
-$.parseHTML(`<style type="text/css">.base-verify, .phone-number { invisibility: hidden; }</style>`)
+document.head.appendChild($.parseHTML(`<style type="text/css">.base-verify, .phone-number { invisibility: hidden; }</style>`))
 
 let fuck = async () => {
     let p = localStorage.placePhone
